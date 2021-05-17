@@ -1,0 +1,110 @@
+h1 {
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: hsl(257, 40%, 49%);
+    background-image: url('images/bg-desktop.svg');
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    color: #fff;
+    font-family: 'Open Sans', sans-serif;
+    /* width: 100%; */
+    margin: 0;
+}
+
+.logo {
+    transform: scale(0.8);
+    padding-top: 30px;
+    padding-left: 30px;
+}
+
+.content {
+    position: relative;
+    display: flex;
+    padding: 6.5% 6.5% 40px 6.5%;
+}
+
+.content-text {
+    padding-left: 3%;
+    padding-top: 2%;
+}
+
+.register {
+    border-radius: 40px;
+    border: none;
+    color: hsl(257, 40%, 49%);
+    background-color: white;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.226);
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    font-size: 1rem;
+    padding: 12px 50px;
+}
+
+.register:hover {
+    background-color: hsl(300, 69%, 71%);
+    color: white;
+    cursor: pointer;
+}
+
+.icon-group {
+    position: absolute;
+    right: 50px;
+    bottom: 0;
+}
+
+.sm-icon {
+    border-radius: 50%;
+    border-width: 1.5px;
+    padding: 9px;
+    margin: 5px;
+    border-style: solid;
+}
+
+.sm-icon:hover {
+    color: hsl(300, 69%, 71%);
+    border-color: hsl(300, 69%, 71%);
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 1025px) {
+    body {
+        background-image: url('images/bg-mobile.svg');
+    }
+    h1 {
+        font-size: 1.5rem;
+    }
+    .content {
+        padding: 10%;
+        text-align: center;
+        display: block;
+    }
+    .logo {
+        width: 45%;
+        height: auto;
+        padding-top: 28px;
+        padding-left: 13px;
+    }
+    .mockup {
+        width: 100%;
+        height: auto;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        padding-top: 3%;
+    }
+    .content-text {
+        padding-left: 0;
+        padding-top: 0;
+    }
+    .register {
+        padding: 10px 80px;
+        margin: 10px;
+    }
+    .icon-group {
+        padding-top: 80px;
+        transform: scale(0.9);
+        position: static;
+    }
+}
